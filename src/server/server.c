@@ -5,12 +5,13 @@
 #include <pthread.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
-#include <sys/mman.h> //Memory Mapped Files (Lab 7)
+#include <sys/mman.h> //Memory Mapped Files-(Lab 7)
 #include <fcntl.h>
 #include <time.h> //Randomizing questions
 #include "../common/protocol.h" //Shared configurations
 
-#define MAX_CLIENTS 10
+//At a time
+#define MAX_CLIENTS 10 
 
 //Shared Data
 Question question_bank[NUM_QUESTIONS] = {
